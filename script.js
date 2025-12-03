@@ -1,30 +1,9 @@
-window.addEventListener('load', () => {
-    const bgm = document.getElementById('bgm');
-    bgm.volume = 0; // HARUS 0 AGAR AUTOPLAY DIIZINKAN
+const bgm = document.getElementById("bgm");
+const playBtn = document.getElementById("playBtn");
 
-    // coba autoplay
-    bgm.play().then(() => {
-        fadeIn(bgm);
-    }).catch(() => {
-        console.warn("Autoplay diblokir. Tunggu interaksi user.");
-    });
-
-    // jika diblokir, klik pertama memulai musik
-    document.body.addEventListener('click', () => {
-        bgm.play();
-        fadeIn(bgm);
-    }, { once: true });
+playBtn.addEventListener("click", () => {
+    bgm.volume = 1;
+    bgm.play();
+    playBtn.style.animation = "none"; // stop wiggle
+    playBtn.style.opacity = "0.4"; // tampak sudah ditekan
 });
-
-// efek fade-in
-function fadeIn(audio) {
-    let vol = 0;
-    const interval = setInterval(() => {
-        if (vol < 1) {
-            vol += 0.05;
-            audio.volume = vol;
-        } else {
-            clearInterval(interval);
-        }
-    }, 150);
-}
