@@ -11,13 +11,10 @@ header {
     padding: 40px 20px;
     background: linear-gradient(90deg, #a7f5ff, #c8ffe0, #fff7a5);
     border-bottom: 6px solid #66d1ff;
-    border-left: 6px solid #66d1ff;
-    border-right: 6px solid #66d1ff;
 }
 
 header h1 {
     font-size: 60px;
-    font-weight: bold;
     color: #008cff;
     text-shadow: 0 0 10px #00eaff, 0 0 20px #7af9ff;
     animation: glow 2s ease-in-out infinite;
@@ -25,17 +22,52 @@ header h1 {
 
 @keyframes glow {
     0% { text-shadow: 0 0 10px #00eaff; }
-    50% { text-shadow: 0 0 25px #7af9ff; }
+    50% { text-shadow: 0 0 23px #7af9ff; }
     100% { text-shadow: 0 0 10px #00eaff; }
 }
 
 header .prayer {
     font-size: 18px;
     color: #007c68;
+}
+
+/* PLAY BUTTON */
+.play-btn-container {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.play-btn {
+    width: 120px;
+    cursor: pointer;
+    animation: wiggle 1.4s ease-in-out infinite, glowBtn 2s ease-in-out infinite;
+    filter: drop-shadow(0 0 10px #8dfaff);
+}
+
+.tap-hint {
+    font-size: 16px;
+    color: #008c7a;
     margin-top: 10px;
 }
 
-/* SPONGEBOB ANIMATION */
+/* Animasi tombol */
+@keyframes wiggle {
+    0% { transform: rotate(0deg); }
+    20% { transform: rotate(3deg); }
+    40% { transform: rotate(-3deg); }
+    60% { transform: rotate(3deg); }
+    80% { transform: rotate(-3deg); }
+    100% { transform: rotate(0deg); }
+}
+
+@keyframes glowBtn {
+    0% { filter: drop-shadow(0 0 4px #89fff3); }
+    50% { filter: drop-shadow(0 0 12px #5fffe5); }
+    100% { filter: drop-shadow(0 0 4px #89fff3); }
+}
+
+/* Spongebob */
 .spongebob-container {
     position: relative;
     width: 100%;
@@ -51,13 +83,11 @@ header .prayer {
     animation: walk 6s linear infinite, jump 0.7s ease-in-out infinite alternate;
 }
 
-/* berjalan dari kanan ke kiri */
 @keyframes walk {
     0% { right: -200px; }
     100% { right: 100%; }
 }
 
-/* animasi lompat */
 @keyframes jump {
     0% { transform: translateY(0); }
     100% { transform: translateY(-25px); }
