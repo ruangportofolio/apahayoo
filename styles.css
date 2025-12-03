@@ -10,17 +10,19 @@ header {
     padding: 40px 20px;
     text-align: center;
     color: #ffffff;
-    position: relative;
 
-    /* MULTIPLE BACKGROUNDS */
-    background-image: 
-        url('balon.gif'),          /* Layer 1: balon gif */
-        linear-gradient(135deg, #4facfe, #00f2fe); /* Layer 2: gradient */
+    /* Background utama */
+    background:
+        linear-gradient(135deg, rgba(79,172,254,0.9), rgba(0,242,254,0.9)),
+        url("balon.gif");
+    background-size: cover;      /* gambar penuh */
+    background-position: center; /* posisi rapi */
+    background-repeat: no-repeat;
 
-    background-repeat: repeat;     /* Berlaku untuk layer pertama (balon) */
-    background-size: 200px auto, cover; /* Ukuran balon, gradient tetap cover */
-    background-position: center;   /* Balon mulai dari tengah */
+    border: 4px solid rgba(255,255,255,0.6);
+    border-radius: 20px;
 }
+
 
 
 header h1 {
@@ -109,6 +111,7 @@ header .prayer {
     0% { transform: translateY(0); }
     100% { transform: translateY(-25px); }
 }
+
 
 
 
