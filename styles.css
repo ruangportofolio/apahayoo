@@ -9,7 +9,10 @@ body {
 header {
     text-align: center;
     padding: 40px 20px;
-    background: linear-gradient(90deg, #a7f5ff, #c8ffe0, #fff7a5);
+    background:
+        url("balon.gif") repeat,
+        linear-gradient(90deg, #a7f5ff, #c8ffe0, #fff7a5);
+    background-size: 120px; /* bisa kamu sesuaikan */
     border-bottom: 6px solid #66d1ff;
 }
 
@@ -99,6 +102,7 @@ header .prayer {
     0% { transform: translateY(0); }
     100% { transform: translateY(-25px); }
 }
+
 
 
 
