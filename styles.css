@@ -20,6 +20,16 @@ header h1 {
     animation: glow 2s ease-in-out infinite;
 }
 
+animation: glow 2s ease-in-out infinite,
+               sway 3s ease-in-out infinite;
+}
+
+@keyframes sway {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(12px); }
+    100% { transform: translateX(0); }
+}
+
 @keyframes glow {
     0% { text-shadow: 0 0 10px #00eaff; }
     50% { text-shadow: 0 0 23px #7af9ff; }
@@ -94,16 +104,5 @@ header .prayer {
 }
 
 
-/* Animasi judul */
-    .header h1 {
-    animation: glow 2s ease-in-out infinite,
-               sway 3s ease-in-out infinite;
-}
-
-@keyframes sway {
-    0% { transform: translateX(0); }
-    50% { transform: translateX(12px); }
-    100% { transform: translateX(0); }
-}
 
 
