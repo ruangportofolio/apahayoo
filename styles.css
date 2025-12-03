@@ -17,6 +17,7 @@ header {
     0% { transform: translateY(0); }
     50% { transform: translateY(-10px); }
     100% { transform: translateY(0); }
+}
 
 @keyframes glow {
     0% { text-shadow: 0 0 10px #00eaff; }
@@ -90,6 +91,7 @@ header .prayer {
     0% { transform: translateY(0); }
     100% { transform: translateY(-25px); }
 }
+
 
 
 
