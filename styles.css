@@ -19,6 +19,8 @@ header h1 {
     text-shadow: 0 0 10px #00eaff, 0 0 20px #7af9ff;
     animation: glow 2.5s ease-in-out infinite, floatText 3s ease-in-out infinite;
 
+}
+    
 @keyframes floatText {
     0% { transform: translateY(0); }
     50% { transform: translateY(-10px); }
@@ -97,6 +99,7 @@ header .prayer {
     0% { transform: translateY(0); }
     100% { transform: translateY(-25px); }
 }
+
 
 
 
