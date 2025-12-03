@@ -8,7 +8,7 @@ body {
 /* HEADER */
 header {
     text-align: center;
-    padding: 30px 20px;
+    padding: 20px 20px;
 
     /* gradient + gambar balon */
     background-image: url('balon.gif'), linear-gradient(90deg, #a7f5ff, #c8ffe0, #fff7a5);
@@ -114,6 +114,7 @@ header .prayer {
     0% { transform: translateY(0); }
     100% { transform: translateY(-25px); }
 }
+
 
 
 
