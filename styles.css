@@ -92,3 +92,17 @@ header .prayer {
     0% { transform: translateY(0); }
     100% { transform: translateY(-25px); }
 }
+
+
+/* Animasi judul */
+    header h1 {
+    animation: glow 2s ease-in-out infinite,
+               sway 3s ease-in-out infinite;
+}
+
+@keyframes sway {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(12px); }
+    100% { transform: translateX(0); }
+}
+
