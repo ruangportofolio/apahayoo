@@ -95,7 +95,7 @@ header .prayer {
 
 
 /* Animasi judul */
-    header h1 {
+    .header h1 {
     animation: glow 2s ease-in-out infinite,
                sway 3s ease-in-out infinite;
 }
@@ -105,4 +105,5 @@ header .prayer {
     50% { transform: translateX(12px); }
     100% { transform: translateX(0); }
 }
+
 
